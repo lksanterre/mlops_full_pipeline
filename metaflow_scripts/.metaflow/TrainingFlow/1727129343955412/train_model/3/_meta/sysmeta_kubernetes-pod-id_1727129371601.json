@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727129343955412", "step_name": "train_model", "task_id": "3", "field_name": "kubernetes-pod-id", "type": "kubernetes-pod-id", "value": "b4ee726b-34cd-478e-bf46-e358104c9f64", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727129371601}

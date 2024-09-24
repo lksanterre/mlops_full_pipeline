@@ -1,0 +1,5 @@
+[MFLOG|0|2024-09-23T20:56:44.253826Z|runtime|b4e2c1a2-2189-4e96-ae4d-d18c26421c0a]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T20:56:44.254006Z|runtime|fefe63df-617d-4dbd-b48d-1e2556059d83]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 5, in <module>
+[MFLOG|0|2024-09-23T20:56:44.254047Z|runtime|661dda2d-7612-4d09-9c98-2a3be8a05c30]    from tensorflow.keras.models import Sequential
+[MFLOG|0|2024-09-23T20:56:44.442757Z|runtime|15925b96-cfe2-4cdc-a9bb-a3f75d4e6315]ModuleNotFoundError: No module named 'tensorflow.keras'
+[MFLOG|0|2024-09-23T20:56:44.443352Z|runtime|7edc462d-d29b-414a-82b6-e743237275a6]Task failed.

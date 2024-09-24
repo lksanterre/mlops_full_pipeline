@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727125891989629", "step_name": "tokenize_and_transform", "task_id": "2", "field_name": "conda_env_prefix", "type": "conda_env_prefix", "value": "metaflow/osx-arm64/c498740e94e3ea3", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727125898640}

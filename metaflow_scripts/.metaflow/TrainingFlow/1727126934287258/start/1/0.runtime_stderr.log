@@ -1,0 +1,8 @@
+[MFLOG|0|2024-09-23T21:28:54.433559Z|runtime|95be592c-e76e-4eda-ba0b-0fc052edfdcf]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T21:28:54.433946Z|runtime|9c0912bf-64b0-4acb-b308-ad91b2bae8be]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 3, in <module>
+[MFLOG|0|2024-09-23T21:28:54.434001Z|runtime|27f2685f-714d-4cf1-8c8b-cf8b553b5542]    from data_processing import process_data  # Import your data processing module
+[MFLOG|0|2024-09-23T21:28:54.434042Z|runtime|69cdd157-a7a6-4d12-8100-55ccd9bc9ef5]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:28:54.434084Z|runtime|990173b3-5ea9-4f26-b6e5-8f575664c046]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/data_processing.py", line 1, in <module>
+[MFLOG|0|2024-09-23T21:28:54.434115Z|runtime|e6ca8db7-7342-40b5-bc7e-f94b18f7fb27]    import pandas as pd
+[MFLOG|0|2024-09-23T21:28:54.450213Z|runtime|359c8aad-7e69-4266-95ab-0452a699a71d]ModuleNotFoundError: No module named 'pandas'
+[MFLOG|0|2024-09-23T21:28:54.450782Z|runtime|a0e00829-c87c-4380-a334-a94048b83bee]Task failed.

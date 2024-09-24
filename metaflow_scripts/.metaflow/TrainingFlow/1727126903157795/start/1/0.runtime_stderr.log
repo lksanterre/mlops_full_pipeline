@@ -1,0 +1,5 @@
+[MFLOG|0|2024-09-23T21:28:25.882269Z|runtime|a9c1f1cc-39ac-4e2e-804e-911093d308cf]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T21:28:25.907512Z|runtime|3e6c18a2-ae5e-4eec-a07e-e6a2fe8bc9e4]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 2, in <module>
+[MFLOG|0|2024-09-23T21:28:25.907674Z|runtime|59d67024-b515-4374-ba00-e4fed8841667]    import numpy as np
+[MFLOG|0|2024-09-23T21:28:25.907726Z|runtime|9cc078e6-f1e1-4893-83d4-b96a111d9b32]ModuleNotFoundError: No module named 'numpy'
+[MFLOG|0|2024-09-23T21:28:25.908207Z|runtime|784b704f-3e80-420a-a0b3-23bf4e476ebf]Task failed.

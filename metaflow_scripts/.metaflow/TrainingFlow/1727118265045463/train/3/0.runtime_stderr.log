@@ -1,0 +1,124 @@
+[MFLOG|0|2024-09-23T19:04:37.314594Z|runtime|0d76a162-48f3-4c0e-abec-10df9709cfb7]2024-09-23 12:04:37.314521: I tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: INVALID_ARGUMENT: indices[9,127] = 1284 is not in [0, 1000)
+[MFLOG|0|2024-09-23T19:04:37.341015Z|runtime|5341c0c3-6417-407a-881e-eb80e9fcb9b8]	 [[{{function_node __inference_one_step_on_data_2405}}{{node sequential_1/embedding_1/GatherV2}}]]
+[MFLOG|0|2024-09-23T19:04:37.341126Z|runtime|14ffa354-11fe-4a7d-a56e-1f6518e35dea]<flow TrainingFlow step train> failed:
+[MFLOG|0|2024-09-23T19:04:37.397553Z|runtime|d57e9b0b-8537-4cbb-9026-7f16dd89733f]    Internal error
+[MFLOG|0|2024-09-23T19:04:37.398625Z|runtime|3e2c3019-621c-4342-ba7a-e30b2d0b6551]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T19:04:37.398688Z|runtime|0182fb96-54d6-465e-8501-5c156d695c96]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-23T19:04:37.398722Z|runtime|f28fb132-fdc2-4f02-8205-7cfd1166dc5d]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-23T19:04:37.398745Z|runtime|84b66242-5d57-46cd-b05e-431fda0fbb4e]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-23T19:04:37.398775Z|runtime|913cb9cb-3e84-4f2a-b6b6-bd430a314274]    return func(args, kwargs)
+[MFLOG|0|2024-09-23T19:04:37.743209Z|runtime|4d434dd4-b58b-4ca9-845f-aebfad147a93]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743387Z|runtime|4fb3873d-9e8d-4ee6-a597-875253d1fb3b]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-23T19:04:37.743423Z|runtime|608785da-6465-4565-a261-576d23ed7f78]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-23T19:04:37.743453Z|runtime|e2d1dfc1-b9e2-4d4f-9655-b2b9e0efa7ed]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743473Z|runtime|2752a246-e574-4248-9869-2f7437770253]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-23T19:04:37.743497Z|runtime|51d96978-706b-4c01-9593-f3e38bdb0b8e]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-23T19:04:37.743518Z|runtime|b88b518d-3874-4f8e-b115-16021d2af56e]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743535Z|runtime|828b34df-d1da-4315-92e3-38898aa507d3]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-23T19:04:37.743552Z|runtime|79629c5f-2df7-4e6a-8c20-068b33566b2f]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-23T19:04:37.743569Z|runtime|5f821e59-c0c8-4a2c-81dc-e939e6c9e049]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743590Z|runtime|46c82e17-5716-4cba-80e6-65ee99518054]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-23T19:04:37.743610Z|runtime|1916b685-82c3-4f2a-afe9-9aa21e803a70]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-23T19:04:37.743626Z|runtime|2a49f658-a61c-41ea-acc1-37bd0a911e1b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743642Z|runtime|d158eead-bb09-4819-b596-d307bc5d5a84]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-23T19:04:37.743662Z|runtime|a3078dfb-6c99-41aa-9a3a-7e015d661363]    return callback(args, kwargs)
+[MFLOG|0|2024-09-23T19:04:37.743685Z|runtime|4588e73e-3af8-47e7-afc8-0faef0232ab1]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743702Z|runtime|86f60f3f-e4b1-4d24-849c-a6bd46352ffc]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-23T19:04:37.743718Z|runtime|02bde7fc-2e19-4fe1-b560-62e613b34430]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-23T19:04:37.743745Z|runtime|70ab34f2-388a-4f59-93bc-eb31f1862373]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743762Z|runtime|ebbe47fd-632c-4a42-a1e3-d7f62db5cdc2]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-23T19:04:37.743782Z|runtime|596f984a-4883-4bfe-976b-575eb1d236bf]    task.run_step(
+[MFLOG|0|2024-09-23T19:04:37.743799Z|runtime|fb856734-dedf-414b-804b-c49a1782b4bd]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-23T19:04:37.743815Z|runtime|96c66915-b940-4d20-9b35-4c1d7d84a31e]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-23T19:04:37.743830Z|runtime|c2a7eae8-c6ae-4854-a205-4e90d21e2b5d]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-23T19:04:37.743848Z|runtime|19302972-c400-453c-89fb-2bf3954dc9b9]    step_function()
+[MFLOG|0|2024-09-23T19:04:37.743863Z|runtime|2ac3748c-0392-4c17-b96c-2fb9335ba4c3]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/training_flow.py", line 44, in train
+[MFLOG|0|2024-09-23T19:04:37.743881Z|runtime|6a6ffcdc-2750-4775-bf25-1b7b6fa7989a]    self.model_name, self.model, self.loss, self.accuracy = train_model(
+[MFLOG|0|2024-09-23T19:04:37.743897Z|runtime|9a270414-c250-4f37-b9ed-79d965c16da9]                                                            ^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T19:04:37.743915Z|runtime|c56c6ca1-c797-49dc-9753-8461b41973c9]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/model_training.py", line 37, in train_model
+[MFLOG|0|2024-09-23T19:04:37.743930Z|runtime|679a6702-4b77-40f9-8090-0759e0dd42f8]    model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
+[MFLOG|0|2024-09-23T19:04:37.743947Z|runtime|e4a6cf50-e9ef-49b8-b08b-ffffb85c5601]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.743968Z|runtime|c1f09bdb-99c2-4c83-8bf9-30f4752ac489]    raise e.with_traceback(filtered_tb) from None
+[MFLOG|0|2024-09-23T19:04:37.743986Z|runtime|4339033b-9fea-404d-86db-e3d7622b0616]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/tensorflow/python/eager/execute.py", line 59, in quick_execute
+[MFLOG|0|2024-09-23T19:04:37.744001Z|runtime|32a3a73d-22c7-45a7-9caa-9fd270a1daf8]    except TypeError as e:
+[MFLOG|0|2024-09-23T19:04:37.744016Z|runtime|4d1f73aa-84d6-4e46-89f7-8027564a160f]tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+[MFLOG|0|2024-09-23T19:04:37.744032Z|runtime|645c0e6a-1dd0-48c7-8730-c788199d5631]
+[MFLOG|0|2024-09-23T19:04:37.744048Z|runtime|2ded9025-138d-4ab7-b379-8d9b4d9bd490]Detected at node sequential_1/embedding_1/GatherV2 defined at (most recent call last):
+[MFLOG|0|2024-09-23T19:04:37.744068Z|runtime|0a6f082c-1cd1-4888-ac81-9a369bda5ffa]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/training_flow.py", line 88, in <module>
+[MFLOG|0|2024-09-23T19:04:37.744084Z|runtime|2dbb732c-d404-474d-abf1-a25c119b22f1]
+[MFLOG|0|2024-09-23T19:04:37.744101Z|runtime|1331a6cf-d7b2-4344-80fe-5e558188f37e]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/flowspec.py", line 128, in __init__
+[MFLOG|0|2024-09-23T19:04:37.744117Z|runtime|7eadc22f-1c84-447a-9e10-a92544604163]
+[MFLOG|0|2024-09-23T19:04:37.744133Z|runtime|6876e598-c7ee-434a-b31a-b814db778854]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-23T19:04:37.744151Z|runtime|48bcd9e6-d4a7-4fb6-9eee-d7c0bc049f48]
+[MFLOG|0|2024-09-23T19:04:37.744174Z|runtime|008705f8-ff48-43ff-8bd5-88cd61907a6e]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-23T19:04:37.744190Z|runtime|03743413-6499-414e-975d-284246dee952]
+[MFLOG|0|2024-09-23T19:04:37.744209Z|runtime|73ad7432-5dd5-4e0a-87b1-b05c5b05b670]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-23T19:04:37.744225Z|runtime|7da4c733-47d6-4ce1-98c1-5ee0aae2daae]
+[MFLOG|0|2024-09-23T19:04:37.744240Z|runtime|0fd913f7-07d6-48d4-9add-a671651bb27c]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-23T19:04:37.744255Z|runtime|2bcddb1a-6872-4b16-a4ca-59137c5cf64f]
+[MFLOG|0|2024-09-23T19:04:37.744270Z|runtime|6848be51-0fbd-41be-9c3b-8d473da13dc6]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-23T19:04:37.744285Z|runtime|01c1c5fb-c96e-4c2a-b7e0-fcdd5d22a6c1]
+[MFLOG|0|2024-09-23T19:04:37.744300Z|runtime|833c2cd4-7075-40c7-971e-8ec0a0d28061]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-23T19:04:37.744317Z|runtime|8752d161-91d3-4e0b-8d8c-cebb94334642]
+[MFLOG|0|2024-09-23T19:04:37.744332Z|runtime|edca980c-22e5-4cfe-b490-2b9ad3de6919]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-23T19:04:37.744347Z|runtime|9b15f4ee-899d-4dde-8fc6-4579867d32dc]
+[MFLOG|0|2024-09-23T19:04:37.744363Z|runtime|875261fd-5342-4311-97bf-d1f1b4d97bc6]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-23T19:04:37.744380Z|runtime|71414116-3c2e-4584-a763-5afb1bf4cdd8]
+[MFLOG|0|2024-09-23T19:04:37.744395Z|runtime|dc642ff2-d39e-4ee1-a70b-40b74086d599]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-23T19:04:37.744412Z|runtime|63f90507-fae1-473f-887f-285f139015a6]
+[MFLOG|0|2024-09-23T19:04:37.744430Z|runtime|e67e7f40-fd1f-4903-a092-6d0d13a448a1]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-23T19:04:37.744445Z|runtime|6f4ff2a4-59fa-4d43-85bc-b4e37fff51ba]
+[MFLOG|0|2024-09-23T19:04:37.744462Z|runtime|4c6d998b-943e-4df1-b623-1c8df3d3cd12]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-23T19:04:37.744480Z|runtime|e5e197ca-4799-4483-80ef-7d6a622d6c0e]
+[MFLOG|0|2024-09-23T19:04:37.744494Z|runtime|244f3b4b-2995-4eda-8c3c-e4495559dffb]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/training_flow.py", line 44, in train
+[MFLOG|0|2024-09-23T19:04:37.744509Z|runtime|a7adce66-080c-466b-927a-1252d6804980]
+[MFLOG|0|2024-09-23T19:04:37.744523Z|runtime|e00e786a-fa3a-4294-af23-290205548afe]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/model_training.py", line 37, in train_model
+[MFLOG|0|2024-09-23T19:04:37.744538Z|runtime|90a41264-7b28-49cd-89df-bd1a8f142671]
+[MFLOG|0|2024-09-23T19:04:37.744553Z|runtime|88444915-f635-42bf-bccf-251e3652d5f3]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 117, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.744568Z|runtime|cc2975af-5d87-4144-acec-d7830413bd8f]
+[MFLOG|0|2024-09-23T19:04:37.744583Z|runtime|80733d2f-9a83-4be3-bb7c-4aa5c4ea05d5]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/backend/tensorflow/trainer.py", line 320, in fit
+[MFLOG|0|2024-09-23T19:04:37.744599Z|runtime|0081a608-99e0-4d93-9348-7c03568731da]
+[MFLOG|0|2024-09-23T19:04:37.744613Z|runtime|5a70773e-7923-43dc-9637-31d232424450]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/backend/tensorflow/trainer.py", line 121, in one_step_on_iterator
+[MFLOG|0|2024-09-23T19:04:37.744630Z|runtime|2e0aa57b-d10d-4b17-9c25-20e59574b90b]
+[MFLOG|0|2024-09-23T19:04:37.744646Z|runtime|678c5591-b1f7-4d7c-8d8b-65055d4fce05]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/backend/tensorflow/trainer.py", line 108, in one_step_on_data
+[MFLOG|0|2024-09-23T19:04:37.744663Z|runtime|fe564e2a-9414-4fd8-b657-ab013ce5f0ee]
+[MFLOG|0|2024-09-23T19:04:37.744678Z|runtime|f982d783-31db-40fc-8dba-b8ffa40a19ad]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/backend/tensorflow/trainer.py", line 51, in train_step
+[MFLOG|0|2024-09-23T19:04:37.744694Z|runtime|a58b65dc-fa57-4cdf-8bd2-d4a5331d68f4]
+[MFLOG|0|2024-09-23T19:04:37.744709Z|runtime|782ca93c-16f7-456b-895d-2ece19dfc9ef]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 117, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.744727Z|runtime|063486d6-54e0-48ca-93eb-51556f1dac05]
+[MFLOG|0|2024-09-23T19:04:37.744745Z|runtime|a88d9f9d-f872-42a3-9f5f-febaf1a17061]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/layers/layer.py", line 901, in __call__
+[MFLOG|0|2024-09-23T19:04:37.744761Z|runtime|339589af-ba61-47b3-a668-41cbe461ff05]
+[MFLOG|0|2024-09-23T19:04:37.744778Z|runtime|bbc19a4e-28ac-46ff-b7b1-bb9bab5a6a0a]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 117, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.744797Z|runtime|c693b9d4-cc81-416c-9ad0-306f56618e5f]
+[MFLOG|0|2024-09-23T19:04:37.744814Z|runtime|85cf9dc8-2b17-41c4-b196-d8f6218681a4]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/ops/operation.py", line 46, in __call__
+[MFLOG|0|2024-09-23T19:04:37.744833Z|runtime|3057825d-8198-4a07-9faf-945e967112c6]
+[MFLOG|0|2024-09-23T19:04:37.744856Z|runtime|31539e0b-d3cc-4d19-9855-fead02bbfb12]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 156, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.744874Z|runtime|d4592232-7821-43de-8443-5d371f38dfe9]
+[MFLOG|0|2024-09-23T19:04:37.744889Z|runtime|563ab29b-1ac9-479b-b301-6d0bfa3537d9]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/models/sequential.py", line 212, in call
+[MFLOG|0|2024-09-23T19:04:37.744905Z|runtime|58f4d2b6-4a31-43d2-92af-295b9baaf81c]
+[MFLOG|0|2024-09-23T19:04:37.744921Z|runtime|b95f6177-c6ae-4de6-b750-c89d7a17f311]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/models/functional.py", line 175, in call
+[MFLOG|0|2024-09-23T19:04:37.744936Z|runtime|16b570e0-aba8-4935-ba54-07099bfa45f9]
+[MFLOG|0|2024-09-23T19:04:37.744951Z|runtime|9123a303-6351-41ff-bc1e-a98b83d53515]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/ops/function.py", line 171, in _run_through_graph
+[MFLOG|0|2024-09-23T19:04:37.744968Z|runtime|32d2d5d3-036e-489b-b187-b3eac39d373a]
+[MFLOG|0|2024-09-23T19:04:37.744984Z|runtime|440115ed-cf62-440e-8887-424b25ce08df]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/models/functional.py", line 560, in call
+[MFLOG|0|2024-09-23T19:04:37.745000Z|runtime|d590cf7b-3eda-4907-866d-f0773e316025]
+[MFLOG|0|2024-09-23T19:04:37.745015Z|runtime|0fc5f9c1-bad9-430a-b880-b4d41d80b9b8]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 117, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.745031Z|runtime|bc3b1e54-c341-4ae6-b827-329b5aa58584]
+[MFLOG|0|2024-09-23T19:04:37.745046Z|runtime|14587523-2bb2-4545-9f1b-5f00db2b2687]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/layers/layer.py", line 901, in __call__
+[MFLOG|0|2024-09-23T19:04:37.745062Z|runtime|3252450c-f2d5-4dbe-9064-63176766c535]
+[MFLOG|0|2024-09-23T19:04:37.745079Z|runtime|3c5c90f4-1d84-443d-bc57-49683dcf8141]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 117, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.745096Z|runtime|5de25051-ff3e-4349-beb6-9cd7bf0c1c0c]
+[MFLOG|0|2024-09-23T19:04:37.745112Z|runtime|ddcb5e26-6f44-444e-8cd7-f1c1dfc59bae]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/ops/operation.py", line 46, in __call__
+[MFLOG|0|2024-09-23T19:04:37.745128Z|runtime|435a69a2-d192-45a4-b689-04d5afee23f3]
+[MFLOG|0|2024-09-23T19:04:37.745143Z|runtime|55f64ae4-e2d6-4320-a0b3-9184c2e9152f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 156, in error_handler
+[MFLOG|0|2024-09-23T19:04:37.745158Z|runtime|de72d2c6-8c80-4fb7-87cf-ff2304c8dc47]
+[MFLOG|0|2024-09-23T19:04:37.745175Z|runtime|04b16a94-4988-4849-a2b5-ebd2e767a810]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/layers/core/embedding.py", line 140, in call
+[MFLOG|0|2024-09-23T19:04:37.745193Z|runtime|3617ec1d-cfc1-4734-814c-3c511ded63fd]
+[MFLOG|0|2024-09-23T19:04:37.745208Z|runtime|426e2404-8c43-4a42-949e-fa6e7829c928]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/ops/numpy.py", line 4918, in take
+[MFLOG|0|2024-09-23T19:04:37.745224Z|runtime|83e3cd8a-a7a1-4b8f-b4fb-40172a804d4d]
+[MFLOG|0|2024-09-23T19:04:37.745240Z|runtime|277d24f0-c867-47d2-9830-fda4a2ed74f4]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/keras/src/backend/tensorflow/numpy.py", line 1967, in take
+[MFLOG|0|2024-09-23T19:04:37.745256Z|runtime|94ac8096-3a62-4d14-ae53-0f53cbe88161]
+[MFLOG|0|2024-09-23T19:04:37.745270Z|runtime|9435a856-aae6-455a-99e9-0e6b38e4bd8c]indices[9,127] = 1284 is not in [0, 1000)
+[MFLOG|0|2024-09-23T19:04:37.745286Z|runtime|3932be42-32b7-4ca3-970b-33b08aa871a8]	 [[{{node sequential_1/embedding_1/GatherV2}}]] [Op:__inference_one_step_on_iterator_2458]
+[MFLOG|0|2024-09-23T19:04:37.745301Z|runtime|5b599ce0-b14c-4c08-8455-5769af067e67]
+[MFLOG|0|2024-09-23T19:04:37.745761Z|runtime|fd3dcc37-fc13-44ee-a4af-cc84bbcaaffb]Task failed.

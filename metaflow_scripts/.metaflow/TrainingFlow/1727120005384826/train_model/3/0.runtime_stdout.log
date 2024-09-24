@@ -1,0 +1,21 @@
+[MFLOG|0|2024-09-23T19:33:36.138887Z|runtime|11dcf9fc-5fec-4edb-a7e3-83a9f12696a6]Training the model...
+[MFLOG|0|2024-09-23T19:33:36.178722Z|runtime|cdc6a800-e8b8-4435-bf83-a8437562ef7c]Epoch 1/10
+[MFLOG|0|2024-09-23T19:33:37.292550Z|runtime|6c44e790-ef53-4c5b-b93d-60a0395b2c0f]157/157 - 1s - 7ms/step - accuracy: 0.8978 - loss: 0.3669
+[MFLOG|0|2024-09-23T19:33:37.292785Z|runtime|c6f36c19-dfd0-4a1c-b77b-00761c5c53b4]Epoch 2/10
+[MFLOG|0|2024-09-23T19:33:37.674818Z|runtime|080a4788-6260-4a63-b7a9-756a70059250]157/157 - 0s - 2ms/step - accuracy: 0.9680 - loss: 0.1090
+[MFLOG|0|2024-09-23T19:33:37.675071Z|runtime|c21bef0e-6953-4566-9e56-cca62c956c2f]Epoch 3/10
+[MFLOG|0|2024-09-23T19:33:38.061441Z|runtime|bca0e434-353a-4b4b-a9a0-f3646e734e79]157/157 - 0s - 2ms/step - accuracy: 0.9718 - loss: 0.0890
+[MFLOG|0|2024-09-23T19:33:38.061681Z|runtime|d9ecf7c9-0f76-4c56-a1d4-be0da47ee4ee]Epoch 4/10
+[MFLOG|0|2024-09-23T19:33:38.441263Z|runtime|b563c8e5-8489-4ca4-a567-4786967aeb3c]157/157 - 0s - 2ms/step - accuracy: 0.9762 - loss: 0.0718
+[MFLOG|0|2024-09-23T19:33:38.441504Z|runtime|4fcc63aa-6afd-41c0-9c54-0e5085360475]Epoch 5/10
+[MFLOG|0|2024-09-23T19:33:38.823073Z|runtime|ade9dfd7-72db-4ee0-80a2-bb8d5f81d432]157/157 - 0s - 2ms/step - accuracy: 0.9814 - loss: 0.0594
+[MFLOG|0|2024-09-23T19:33:38.823316Z|runtime|7db4fc14-e84e-485e-bbd8-ebfe91c1460c]Epoch 6/10
+[MFLOG|0|2024-09-23T19:33:39.210081Z|runtime|bd8e9830-e410-4a9b-a638-19c289307436]157/157 - 0s - 2ms/step - accuracy: 0.9888 - loss: 0.0442
+[MFLOG|0|2024-09-23T19:33:39.210313Z|runtime|cdbe5b97-18c4-4bce-beb4-dd734146c0b8]Epoch 7/10
+[MFLOG|0|2024-09-23T19:33:39.594366Z|runtime|97855daf-322f-40ff-abcc-ad43db62bc91]157/157 - 0s - 2ms/step - accuracy: 0.9898 - loss: 0.0359
+[MFLOG|0|2024-09-23T19:33:39.594608Z|runtime|a31d63e0-5794-4210-86df-b7ca514516a0]Epoch 8/10
+[MFLOG|0|2024-09-23T19:33:39.988731Z|runtime|b16449b4-779b-4956-b3ef-d5b055d041d5]157/157 - 0s - 3ms/step - accuracy: 0.9916 - loss: 0.0322
+[MFLOG|0|2024-09-23T19:33:39.988930Z|runtime|7617d79b-26ca-4f27-bbdb-215180106b3a]Epoch 9/10
+[MFLOG|0|2024-09-23T19:33:40.370262Z|runtime|da7c723a-f474-4380-8351-e99572e79f3a]157/157 - 0s - 2ms/step - accuracy: 0.9920 - loss: 0.0288
+[MFLOG|0|2024-09-23T19:33:40.370516Z|runtime|2adbf3f2-ff44-46cc-a0a5-48f3f51aa7e8]Epoch 10/10
+[MFLOG|0|2024-09-23T19:33:40.755001Z|runtime|624cb267-5a78-46ae-8886-6352a0c2a122]157/157 - 0s - 2ms/step - accuracy: 0.9938 - loss: 0.0226

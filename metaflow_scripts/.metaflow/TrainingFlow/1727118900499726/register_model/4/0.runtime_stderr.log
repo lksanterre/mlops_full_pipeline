@@ -1,0 +1,8 @@
+[MFLOG|0|2024-09-23T19:15:57.422736Z|runtime|4f9bcac4-d891-4969-8044-909d7b3aa007]2024/09/23 12:15:57 INFO mlflow.tracking.fluent: Experiment with name 'model_traning_metaflow' does not exist. Creating a new experiment.
+[MFLOG|0|2024-09-23T19:15:58.056713Z|runtime|ac42b306-1fda-4176-82cb-68cd213d11ea]2024/09/23 12:15:58 WARNING mlflow.keras.save: You are saving a Keras model without specifying model signature.
+[MFLOG|0|2024-09-23T19:16:04.491733Z|runtime|3e2ab1e3-7fb7-4945-be26-34567d8b471a]2024/09/23 12:16:04 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
+[MFLOG|0|2024-09-23T19:16:04.675471Z|runtime|72a8f593-a76a-4ce7-b296-d804e6170149]Successfully registered model 'model_1'.
+[MFLOG|0|2024-09-23T19:16:04.780701Z|runtime|01c224a8-1fd3-4917-9abb-407d820e7513]2024/09/23 12:16:04 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: model_1, version 1
+[MFLOG|0|2024-09-23T19:16:04.832934Z|runtime|1a587bd5-9190-424e-8a16-e1e08f3bb016]Created version '1' of model 'model_1'.
+[MFLOG|0|2024-09-23T19:16:04.833163Z|runtime|cccffd35-0ee4-406b-9384-6898fa81a3ce]2024/09/23 12:16:04 INFO mlflow.tracking._tracking_service.client: 🏃 View run blushing-gnat-551 at: https://mlflow-service-1073438601911.us-west2.run.app/#/experiments/2/runs/9997405aaf264b40a2b419bdcefa3fc2.
+[MFLOG|0|2024-09-23T19:16:05.379296Z|runtime|44e8095a-857f-421d-a34b-d687a535bc9a]2024/09/23 12:16:04 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: https://mlflow-service-1073438601911.us-west2.run.app/#/experiments/2.

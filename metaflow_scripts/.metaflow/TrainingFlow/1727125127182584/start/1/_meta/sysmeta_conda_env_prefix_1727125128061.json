@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727125127182584", "step_name": "start", "task_id": "1", "field_name": "conda_env_prefix", "type": "conda_env_prefix", "value": "metaflow/osx-arm64/c498740e94e3ea3", "tags": ["attempt_id:3"], "user_name": "lancesanterre", "ts_epoch": 1727125128061}

@@ -1,0 +1,5 @@
+[MFLOG|0|2024-09-23T20:46:25.725250Z|runtime|9f0b224e-2910-437f-90d4-7fe4db5fb2d8]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T20:46:25.748120Z|runtime|3db108ac-42f8-4ae9-96e9-dfb74c683734]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 2, in <module>
+[MFLOG|0|2024-09-23T20:46:25.748330Z|runtime|6b605dc4-4593-46a0-9a92-ab05e11e9b6b]    import mlflow
+[MFLOG|0|2024-09-23T20:46:25.748377Z|runtime|a2f47fae-d18a-46e1-b359-31eed9d9ba2d]ModuleNotFoundError: No module named 'mlflow'
+[MFLOG|0|2024-09-23T20:46:25.748826Z|runtime|60b22c03-e4ed-4386-8e78-a23be17f1edf]Task failed.

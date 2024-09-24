@@ -1,0 +1,38 @@
+[MFLOG|0|2024-09-23T20:59:10.586350Z|runtime|02745f0f-596f-4ea5-9474-d9081535cf7f]<flow TrainingFlow step start> failed:
+[MFLOG|0|2024-09-23T20:59:10.589476Z|runtime|bb3b2ab9-123b-4c44-92a7-fbfb50f387b0]    Internal error
+[MFLOG|0|2024-09-23T20:59:10.590304Z|runtime|403acf41-f833-4732-b9e2-adab70e508d2]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T20:59:10.590356Z|runtime|ccc24251-0735-42e6-828d-c362200d5043]  File "/tmp/tmp8j8kz4_w/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-23T20:59:10.590384Z|runtime|f2247f35-31de-4ee7-aa65-f3061f0389e6]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-23T20:59:10.590410Z|runtime|986aaece-68f6-4488-a371-532d5a0d2a28]  File "/tmp/tmp8j8kz4_w/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-23T20:59:10.590440Z|runtime|b3480f0b-f0e8-4fb2-93e5-63949179cb04]    return func(args, kwargs)
+[MFLOG|0|2024-09-23T20:59:10.615964Z|runtime|66aec053-8741-4974-9c9a-7a2be6ee9a00]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616114Z|runtime|2de64e4e-17b4-4ffe-9bab-9c49bc116cd5]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-23T20:59:10.616144Z|runtime|660e07a6-3cd3-4496-a2c4-4518527f0e6d]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-23T20:59:10.616168Z|runtime|6bdc5759-f2de-489e-bb0f-a2b17abb94c2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616187Z|runtime|ee4db03b-427c-47fa-b50e-08fef511bac4]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-23T20:59:10.616205Z|runtime|7bfad578-70ba-4a62-8f88-2a7ff1ada78c]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-23T20:59:10.616222Z|runtime|8cfb47d8-9140-4e6c-8ae3-3faa035aa9f1]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616241Z|runtime|9b34f8ca-d46e-40b6-9575-ef8015663909]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-23T20:59:10.616259Z|runtime|9d04be26-8dba-4e4b-a947-fdba55026635]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-23T20:59:10.616286Z|runtime|651e5900-78d7-4d60-ac70-9c80116aa09a]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616303Z|runtime|3f14dc03-203a-4ded-8609-c73a4dc08ad5]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-23T20:59:10.616319Z|runtime|655c07ac-ceff-4fec-81ef-61d402c2b6a6]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-23T20:59:10.616335Z|runtime|377f842f-8c35-487f-abaf-950d03628d2f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616351Z|runtime|c373d753-5622-4665-8c02-cc3d717ca221]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-23T20:59:10.616368Z|runtime|f380d277-f235-4e6c-b0fb-44b188a37901]    return callback(args, kwargs)
+[MFLOG|0|2024-09-23T20:59:10.616384Z|runtime|0c4d83b4-4635-4d42-b68c-ce5061804377]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616400Z|runtime|1eafee5d-77d0-49c5-aafb-08e9577e3017]  File "/tmp/tmp8j8kz4_w/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-23T20:59:10.616429Z|runtime|78923c16-5c20-4a55-93ff-813f6a2a45c0]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-23T20:59:10.616446Z|runtime|09390ac9-aaa7-4f46-83e6-5db71a9745e4]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616462Z|runtime|94640023-c95a-4ebf-b745-adbc772847a4]  File "/tmp/tmp8j8kz4_w/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-23T20:59:10.616478Z|runtime|25f6703e-e010-4ab7-b685-4446e1e241fa]    task.run_step(
+[MFLOG|0|2024-09-23T20:59:10.616494Z|runtime|a3eef870-c04d-410a-8a83-cea5a4138814]  File "/tmp/tmp8j8kz4_w/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-23T20:59:10.616511Z|runtime|32badc0e-d022-4901-8b1f-7188a7302630]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-23T20:59:10.616527Z|runtime|56822de4-3ce9-453c-b397-8b04f84b48ba]  File "/tmp/tmp8j8kz4_w/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-23T20:59:10.616544Z|runtime|590c8dc1-ccfa-4f2f-aafe-0fa37fcc048e]    step_function()
+[MFLOG|0|2024-09-23T20:59:10.616559Z|runtime|bfad15cd-90c0-468b-a3b7-c2e38cb507da]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 39, in start
+[MFLOG|0|2024-09-23T20:59:10.616580Z|runtime|969b22ad-ef5a-483a-b96b-575444225e50]    self.data = process_data(self.data_path)
+[MFLOG|0|2024-09-23T20:59:10.616603Z|runtime|0e5e23af-d8d8-48cf-997d-4376bbe51fed]                ^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T20:59:10.616618Z|runtime|2da8ebec-6718-484f-ade7-640214a7e6fb]NameError: name 'process_data' is not defined
+[MFLOG|0|2024-09-23T20:59:10.616634Z|runtime|d6becdd8-df4b-4f8a-90c3-6a72df8dcdbd]
+[MFLOG|0|2024-09-23T20:59:10.617088Z|runtime|b8a17946-dc5d-4fe0-81c1-bb3037c485e7]Task failed.

@@ -1,0 +1,37 @@
+[MFLOG|0|2024-09-23T21:16:47.365772Z|runtime|9890df1c-93d3-4b23-bebd-60df26208b12]<flow TrainingFlow step tokenize_and_transform> failed:
+[MFLOG|0|2024-09-23T21:16:47.368798Z|runtime|427959c7-8a37-435f-aa51-b820b8998ed0]    Internal error
+[MFLOG|0|2024-09-23T21:16:47.369541Z|runtime|03606d62-8ffa-4f60-81f6-0964b6894533]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T21:16:47.369590Z|runtime|50fa8bfd-93bd-4474-b071-e57846d6b19b]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-23T21:16:47.369629Z|runtime|3611c3e6-206b-482f-994e-a9437727972a]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-23T21:16:47.369662Z|runtime|b865dc65-175d-47c7-9863-55b63715645f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-23T21:16:47.369687Z|runtime|b161b53b-f3c8-4d94-95b1-df327cbd2321]    return func(args, kwargs)
+[MFLOG|0|2024-09-23T21:16:47.597772Z|runtime|c456fc48-e8e6-4291-a56b-8e43969ea42c]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.597956Z|runtime|8882b5ce-c35f-4e6b-847c-389034199250]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-23T21:16:47.598003Z|runtime|735032a0-27c9-49f9-a7a2-7ce916ff4d0d]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-23T21:16:47.598040Z|runtime|f1da1c4a-e8cf-4294-82bf-99ecba25f9fe]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598061Z|runtime|7b78875b-70a6-4ddc-8e73-16e3ee7f464c]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-23T21:16:47.598080Z|runtime|8f60826c-b3cb-4b59-956c-209223ab9d89]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-23T21:16:47.598103Z|runtime|bb9ca6c0-65d0-446f-9afc-3d7499eadd04]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598123Z|runtime|12e03383-d385-4a18-a74d-a3f7a771c1c8]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-23T21:16:47.598146Z|runtime|91fdb438-de42-4eec-bc73-00323d9c9c25]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-23T21:16:47.598165Z|runtime|fc681642-5090-4ec0-a253-a6d9da7a123b]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598183Z|runtime|959104c8-d687-4743-beab-ab57cdcc4daf]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-23T21:16:47.598204Z|runtime|5857e0a8-5e65-4d3a-a9aa-3501094c530e]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-23T21:16:47.598227Z|runtime|492d3a7e-5c7f-43d1-861a-871503094412]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598243Z|runtime|3fbfdb8a-301e-4fc5-b07b-261e85e99514]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-23T21:16:47.598270Z|runtime|ab5487a3-93ef-4d98-b713-d04d94cd2404]    return callback(args, kwargs)
+[MFLOG|0|2024-09-23T21:16:47.598294Z|runtime|ea3e3930-cedc-4b49-9953-40b8b684a0a0]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598314Z|runtime|7d6f7699-a0e4-4d59-9bc4-219ef7872ef2]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-23T21:16:47.598330Z|runtime|94de107b-c0a8-4104-a0f5-00bcc4cc4898]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-23T21:16:47.598349Z|runtime|000245ef-e94c-4201-8d74-6741800cafe0]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:16:47.598365Z|runtime|8cff819b-8844-4467-92cd-07f23e956a0e]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-23T21:16:47.598382Z|runtime|aa9f1884-8ae8-481b-89d7-465fb683c8cf]    task.run_step(
+[MFLOG|0|2024-09-23T21:16:47.598400Z|runtime|da91a921-ccff-4fc3-9b46-b8bf75b9808d]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-23T21:16:47.598418Z|runtime|588eb85b-40df-474d-a397-8b26871f416f]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-23T21:16:47.598435Z|runtime|77267e3e-274e-4463-84ab-1fe40ca8db9f]  File "/opt/homebrew/anaconda3/envs/intern/lib/python3.11/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-23T21:16:47.598454Z|runtime|405d1aa3-8b08-4b61-a835-176a89b13291]    step_function()
+[MFLOG|0|2024-09-23T21:16:47.598473Z|runtime|eac11a0f-5453-40a2-a8b7-6b23fa4ead55]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 28, in tokenize_and_transform
+[MFLOG|0|2024-09-23T21:16:47.598490Z|runtime|46334b9b-b6da-487a-8894-0414966dcf0c]    from keras.preprocessing.text import Tokenizer
+[MFLOG|0|2024-09-23T21:16:47.598508Z|runtime|cdc7e6ab-74c8-4ec9-a138-f9b6a98a988e]ModuleNotFoundError: No module named 'keras.preprocessing.text'
+[MFLOG|0|2024-09-23T21:16:47.598527Z|runtime|d5439664-ebcf-4b67-bebe-a87f482176cd]
+[MFLOG|0|2024-09-23T21:16:47.598975Z|runtime|6b3e1fd2-8c72-42a3-8069-09a44a78e3ab]Task failed.

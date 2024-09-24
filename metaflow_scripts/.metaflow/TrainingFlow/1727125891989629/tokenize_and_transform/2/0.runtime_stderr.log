@@ -1,0 +1,37 @@
+[MFLOG|0|2024-09-23T21:11:38.641262Z|runtime|3130f88b-2d0e-49b9-8aed-b389313361d8]<flow TrainingFlow step tokenize_and_transform> failed:
+[MFLOG|0|2024-09-23T21:11:38.644675Z|runtime|7e9c708f-80bd-44f9-87f7-362b78b9d922]    Internal error
+[MFLOG|0|2024-09-23T21:11:38.645579Z|runtime|dbb24713-c8ca-4d19-8902-5989dde71f67]Traceback (most recent call last):
+[MFLOG|0|2024-09-23T21:11:38.645638Z|runtime|04136b22-ae6e-4550-b7d5-91d2e4eff170]  File "/tmp/tmpbc22y9em/metaflow/cli.py", line 1134, in main
+[MFLOG|0|2024-09-23T21:11:38.645681Z|runtime|5c4dedce-e52c-46c8-b94c-5c5388fac648]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-09-23T21:11:38.645710Z|runtime|5d17d99d-936b-4d0b-bd59-35e94488479f]  File "/tmp/tmpbc22y9em/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-09-23T21:11:38.645743Z|runtime|df8fe5fa-79b6-4863-a4c5-cd1fc65b3a64]    return func(args, kwargs)
+[MFLOG|0|2024-09-23T21:11:38.900462Z|runtime|b3164f79-a3e6-46f7-aa64-2aa8085bb4f4]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900629Z|runtime|d79f16e7-306e-43a4-9bc6-cd88c2a88106]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-09-23T21:11:38.900665Z|runtime|05428086-b63a-4b89-8e5d-7e4c82c7c81f]    return self.main(args, kwargs)
+[MFLOG|0|2024-09-23T21:11:38.900690Z|runtime|817d09fd-a1ca-4eb3-8c7c-e6abfe0a3b52]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900709Z|runtime|4bfcb190-8bd8-4b83-ac04-626c3fd0148e]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-09-23T21:11:38.900746Z|runtime|70a27e40-d8d0-4d42-8b50-97b8f95f97ba]    rv = self.invoke(ctx)
+[MFLOG|0|2024-09-23T21:11:38.900767Z|runtime|c74851a7-4530-41a4-9d03-673c00be4c44]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900793Z|runtime|6b4cd230-308e-47dc-9060-658acad63516]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-09-23T21:11:38.900817Z|runtime|70af054f-748a-48f5-b747-ae819ed73689]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-09-23T21:11:38.900834Z|runtime|2bcf6c51-092b-4721-a84a-b406f615bb5e]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900854Z|runtime|10caad29-15c4-40f2-9ed1-9d8a8b66aca2]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-09-23T21:11:38.900876Z|runtime|d81d0f22-5837-4567-8dfb-3b73e4356fbd]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-09-23T21:11:38.900893Z|runtime|bf2d44a4-2614-43ba-b68f-a8c7469fd96b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900909Z|runtime|e9393f05-dd14-4692-8b02-f4cbb0d6f9ef]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-09-23T21:11:38.900933Z|runtime|8ea619db-b68e-488a-bbf6-c61ae926fbcd]    return callback(args, kwargs)
+[MFLOG|0|2024-09-23T21:11:38.900949Z|runtime|b3bb014e-619e-4dd7-a9f0-4683dba53b5e]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.900968Z|runtime|102566eb-7bbe-402a-83b2-9853c045b5ad]  File "/tmp/tmpbc22y9em/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-09-23T21:11:38.900984Z|runtime|86175479-8423-4abf-8c05-6fc47beb0cf1]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-09-23T21:11:38.901005Z|runtime|aa9b679a-daad-415d-9649-7d4bdd9405e2]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-09-23T21:11:38.901021Z|runtime|e6537ed6-eddb-41e0-b87a-3e1c343e1a31]  File "/tmp/tmpbc22y9em/metaflow/cli.py", line 468, in step
+[MFLOG|0|2024-09-23T21:11:38.901041Z|runtime|21bcee99-d289-429e-a688-40d87d87b2c3]    task.run_step(
+[MFLOG|0|2024-09-23T21:11:38.901058Z|runtime|4faaa6af-8253-449c-a5fa-df006694edfc]  File "/tmp/tmpbc22y9em/metaflow/task.py", line 650, in run_step
+[MFLOG|0|2024-09-23T21:11:38.901084Z|runtime|43568e68-4bd6-4e8a-8346-b5f5f1ed8333]    self._exec_step_function(step_func)
+[MFLOG|0|2024-09-23T21:11:38.901102Z|runtime|781837f7-5765-40de-a455-9dac09de6d14]  File "/tmp/tmpbc22y9em/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2024-09-23T21:11:38.901124Z|runtime|fd10244d-21dc-4c4a-b4d8-cba80917868d]    step_function()
+[MFLOG|0|2024-09-23T21:11:38.901143Z|runtime|c952398f-8b57-43e7-b579-7584a1fe6fab]  File "/Users/lancesanterre/pipeline_edu/metaflow_scripts/scoring_flow.py", line 35, in tokenize_and_transform
+[MFLOG|0|2024-09-23T21:11:38.901166Z|runtime|c47a96d9-fee7-41b1-8386-a09959b76572]    from tensorflow.keras.preprocessing.text import Tokenizer
+[MFLOG|0|2024-09-23T21:11:38.901189Z|runtime|1150338f-1017-46a8-a36a-f868e575d21e]ModuleNotFoundError: No module named 'tensorflow.keras'
+[MFLOG|0|2024-09-23T21:11:38.901207Z|runtime|febb44fb-c205-47e6-8c91-afd9af94ba2d]
+[MFLOG|0|2024-09-23T21:11:38.901689Z|runtime|666d147e-fe86-41b2-a10b-f6753fa0ea72]Task failed.

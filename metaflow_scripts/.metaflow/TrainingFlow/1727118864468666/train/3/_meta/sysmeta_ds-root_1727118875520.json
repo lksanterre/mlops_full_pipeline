@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727118864468666", "step_name": "train", "task_id": "3", "field_name": "ds-root", "type": "ds-root", "value": "/Users/lancesanterre/pipeline_edu/metaflow_scripts/.metaflow", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727118875520}
