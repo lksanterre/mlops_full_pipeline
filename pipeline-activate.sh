@@ -1,2 +1,1 @@
-source ~/tmp/env/intern_pipeline/bin/activate
-source ~/tmp/env/intern_pipeline/bin/activate
+conda activate /Users/lancesanterre/opt/anaconda3/envs/pipeline
