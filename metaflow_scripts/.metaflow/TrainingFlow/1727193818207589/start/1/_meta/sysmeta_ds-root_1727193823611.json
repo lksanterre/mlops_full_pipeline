@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727193818207589", "step_name": "start", "task_id": "1", "field_name": "ds-root", "type": "ds-root", "value": "gs://storage-lance-metaflow-metaflow-default/tf-full-stack-sysroot", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727193823611}

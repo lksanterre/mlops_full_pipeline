@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727193818207589", "step_name": "tokenize_and_transform", "task_id": "2", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.12.20", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727193830919}

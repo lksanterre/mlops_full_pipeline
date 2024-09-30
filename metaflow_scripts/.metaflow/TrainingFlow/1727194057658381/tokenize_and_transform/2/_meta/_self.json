@@ -1,0 +1,1 @@
+{"run_number": "1727194057658381", "step_name": "tokenize_and_transform", "task_id": "2", "flow_id": "TrainingFlow", "user_name": "lancesanterre", "tags": [], "system_tags": ["runtime:dev", "metaflow_version:2.12.20", "user:lancesanterre", "python_version:3.11.9"], "ts_epoch": 1727194069693}

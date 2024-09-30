@@ -1,0 +1,1 @@
+{"flow_id": "TrainingFlow", "run_number": "1727193818207589", "step_name": "train_model", "task_id": "3", "field_name": "kubernetes-pod-namespace", "type": "kubernetes-pod-namespace", "value": "argo", "tags": ["attempt_id:0"], "user_name": "lancesanterre", "ts_epoch": 1727193854841}

@@ -99,4 +99,4 @@ def process_data(path):
     filtered_questions = sure['question']
     filtered_labels = sure['labels']
 
-    return filtered_questions[:5000], filtered_labels[:5000]
+    return filtered_questions, filtered_labels

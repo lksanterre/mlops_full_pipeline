@@ -30,6 +30,7 @@ class TrainingFlow(FlowSpec):
     def tokenize_and_transform(self):
         """Tokenize and transform the data."""
         import numpy as np
+        import os
         import pickle  # Make sure to import pickle here
         from tensorflow.keras.preprocessing.text import Tokenizer
         from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -42,7 +43,9 @@ class TrainingFlow(FlowSpec):
         sequences = self.tokenizer.texts_to_sequences(questions)
         self.X = pad_sequences(sequences, maxlen=self.input_length)
         self.y = np.array(labels.tolist())  # Adjust if needed
-
+        # Save the tokenizer to a specific location
+        tokenizer_path = "//Users/lancesanterre/pipeline_edu/model_token/tokenizer.pkl"  # Specify your desired path
+        os.makedirs(os.path.dirname(tokenizer_path), exist_ok=True) 
         with open('tokenizer.pkl', 'wb') as f:
             pickle.dump(self.tokenizer, f)
 
@@ -85,6 +88,9 @@ class TrainingFlow(FlowSpec):
         prediction_path = '/Users/lancesanterre/pipeline_edu/data/predictions/predictions.pkl'
         with open(prediction_path, 'wb') as f:
             pickle.dump(predictions, f)
+            model_path = "/Users/lancesanterre/pipeline_edu/model_token"  # Specify your desired path
+        self.model.save(model_path)
+        print(f"Model saved to {model_path}")
         print(f"Predictions saved as '{prediction_path}'")
         self.next(self.end)
 
